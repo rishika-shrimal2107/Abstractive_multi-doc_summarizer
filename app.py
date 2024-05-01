@@ -72,6 +72,7 @@ def scientific():
         return render_template("scientific.html")
     
     
+
 @app.route("/legal", methods=["GET", "POST"])
 def legal():
     if request.method == "POST":
@@ -79,7 +80,7 @@ def legal():
         maxL = int(request.form["maxL"])
         minL=maxL//4
         def query(payload):
-            response = requests.post("https://api-inference.huggingface.co/models/phoen1x/T5-Finetuned-legal-summarization",headers = {"Authorization": f"Bearer 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"},json=payload)
+            response = requests.post("https://api-inference.huggingface.co/models/facebook/bart-large-cnn",headers = {"Authorization": f"Bearer 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"},json=payload)
             return response.json()
 
         output = query({
@@ -87,18 +88,18 @@ def legal():
             "parameters": {"min_length":minL, "max_length":maxL},
         })[0]
 
-        return render_template("legal.html", result=output["generated_text"])
+        return render_template("legal.html", result=output["summary_text"])
     else:
         return render_template("legal.html")
     
 @app.route("/general", methods=["GET", "POST"])
-def general():
+def general():  
     if request.method == "POST":
         data = request.form["data"]
         maxL = int(request.form["maxL"])
         minL=maxL//4
         def query(payload):
-            response = requests.post("https://api-inference.huggingface.co/models/remi/bartabs-finetuned-extractive-abstractive-summarization",headers = {"Authorization": f"Bearer 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"},json=payload)
+            response = requests.post("https://api-inference.huggingface.co/models/haining/scientific_abstract_simplification",headers = {"Authorization": f"Bearer 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"},json=payload)
             return response.json()
 
         output = query({
@@ -134,3 +135,4 @@ def medical():
 if __name__ == '__main__':
     app.debug=True
     app.run()
+
