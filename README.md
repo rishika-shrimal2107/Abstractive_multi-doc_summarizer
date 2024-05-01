@@ -1,5 +1,5 @@
 # Abstractive_multi-doc_summarizer
-![Project Logo/Image](https://raw.githubusercontent.com/deepak525/Breast-Cancer-Visualization-and-Classification/a624b112600b87dc9f35e4163a2488ff827eacd1//sps.png)
+![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/tree/main/img)
 
  ##  ➲Our Tagline 
  Unleash the Power of Multi-Document Summarization (MDSum)💙
@@ -44,6 +44,12 @@ This diverse training regimen equips the model to generate high-quality summarie
 - After getting the summary, the user can copy the text to clipboard to use it somewhere else
 
 ## ➲WEB APPLICATION- SmartSnip
+
+![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/blob/main/img/img2.png)
+
+![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/blob/main/img/img3.png)
+
+![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/blob/main/img/img4.png)
 
 ## ➲Installation
 
