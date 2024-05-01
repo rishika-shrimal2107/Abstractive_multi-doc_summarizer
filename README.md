@@ -1,5 +1,5 @@
 # Abstractive_multi-doc_summarizer
-![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/tree/main/img)
+![Project Logo/Image](https://github.com/rishika-shrimal2107/Abstractive_multi-doc_summarizer/blob/main/img/img1.png)
 
  ##  ➲Our Tagline 
  Unleash the Power of Multi-Document Summarization (MDSum)💙
