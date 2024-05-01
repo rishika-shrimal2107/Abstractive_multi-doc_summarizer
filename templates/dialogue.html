@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSnip</title>
+  <link rel ="icon" href="/images/favicon-enhanced.png">
+  <link rel="stylesheet" href="static\index.css"/>
+  <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body onload="myFunction()">
+    <video autoplay muted loop id="video-bg">
+      <source src="static\images/dialogue.mp4" type="video/mp4">
+      
+    </video>
+    <!-- Header Section -->
+    <header>
+      <nav class="nav">
+        <div>
+          <a class="navbar-brand" href="#!">
+            <img src="static\logo.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul class="links" id="navmenu">
+            <li><a href="#">HOME</a></li>
+            
+            <li><a href="#summarytool">SUMMARYTOOL</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <h1>SNIP SNAP SUMMARIZE<br>with SmartSnip</h1>
+        <h3>Enter your text to generate a summary.<br> Perfect for homework, research papers, and more.</h3>
+      </div>
+      </header>
+       <!-- summarization section -->
+      <section id="summarytool">
+        <h1>Summary Tool</h1>
+    <div class="container">
+      <div class="responsive input">
+        <form action="{{url_for('dialogue')}}" method="post">
+        <textarea id="data" name="data" rows="30" class="w-full bg-gray-200 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 resize-none" placeholder="Enter your text here..." style="width: 100%;"></textarea>
+        <div class="m-2 flex self-center">
+          <h3><font face="sans-serif" color="white" size="3">
+              Summary Length
+              </font>
+          </h3>
+          <input type="range" class="m-2 min="20" max="1000" name="maxL">
+      </div>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg"
+        style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110);" type="submit" onclick="Check()">Summarize</button>
+    <button class="m-1 bg-red-500 hover:bg-pink-400 text-white font-semi-bold py-2 px-4 rounded-lg"
+    style="height:40px;width:120px; font-size: large" type="reset">Clear</button> 
+  </form> 
+    </div> 
+        <div class="responsive output">
+            <textarea id="myInput" name="result" rows="30" class="w-full bg-gray-200 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 resize-none" placeholder="Your summary will be appear here">{{result}}</textarea>
+            <button
+          class="m-4 bg-purple-700 hover:bg-purple-500 text-white font-semi-bold py-2 px-4 rounded-lg self-center"
+          style="height:40px;width:120px; font-size: large; background-color: rgb(230, 17, 110);"
+          onclick="myFunction()">Copy text</button>
+
+
+          </div>  
+          </div> 
+      </div>
+      </section>
+      <script>
+        function myFunction() {
+            
+            var copyText = document.getElementById("myInput");
+
+            
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            
+
+            navigator.clipboard.writeText(copyText.value);
+            
+        }
+    </script>
+    <script>
+        function Check() {
+
+            var reg = /<(.|\n)*>/g;
+
+            if (reg.test(document.getElementById("data").value) == true) {
+                var ErrorText = 'Make Sure You Provide Valid Data.';
+                alert('Error Text');
+
+            }
+        }
+    </script>
+
+      <!-- footer start -->
+ <footer>
+  <div class="footer-container">
+    <!--logo and info column-->
+    <div class="col">
+      <!--logo insert-->
+      <img src="static\logo.png" alt="logo" class="footlogo" />
+      <div class="footercontent">
+        <h2 class="footerheading">SmartSnip</h2>
+        <p class="footerpara">Snip snap summarize</p>
+      </div>
+    </div>
+
+    <!--ADDRESS COLUMN-->
+
+    <div class="footer-side-col">
+      <div class="col">
+        <h3>
+          ADDRESS
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Banasthali University, India</p>
+        <p class="email-id"><a href="mailto:shrimalrishika@gmail.com">shrimalrishika@gmail.com</a></p>
+      </div>
+     
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li>
+            <a href="https://github.com/rishitaaaaa">Contributer 1</a>
+          </li>
+          <li>
+            <a href="https://github.com/rishika-shrimal2107">Contributer 2</a>
+          </li>
+           
+        </ul>
+      </div>
+      
+      <!--CONTACTS COLUMN-->
+      <div class="col">
+        <h3>
+          CONTACTS
+          <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-menu">
+           <ul>
+            <a href="https://x.com/RishitaU1234?t=LzpyCKuMptR2QlvR9PNrVQ&s=09">
+              <li><i class="fab fa-2x fa-twitter"></i></li>
+            </a>
+            <a href="https://github.com/rishika-shrimal2107">
+              <li><i class="fab fa-2x fa-github"></i></li>
+            </a>
+            <a href="https://www.linkedin.com/in/rishika-shrimal-7577a7221/">
+              <li><i class="fab fa-2x fa-linkedin-in"></i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

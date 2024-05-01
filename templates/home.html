@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSnip</title>
+  <link rel ="icon" href="static\logo.png">
+  <link rel="stylesheet" href="static\home.css" />
+  <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  
+<body onload="myFunction()">
+  <video autoplay muted loop id="video-bg">
+    <source src="static\images/indexpagevideo.mp4" type="video/mp4">
+    
+  </video>
+  <!-- Header Section -->
+  <header>
+    <nav class="nav">
+      <div>
+        <a class="navbar-brand" href="#!">
+          <img src="static\logo.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <h1>Transforming the world<br> with SmartSnip</h1>
+      <h3>your intelligent document summarizer</h3>
+      <a href="#services" class="rainbow-button" alt="Explore">Explore</a>
+    </div>
+  </header>
+
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="max-width ">
+          <div class="photo"><img src="static\images/aboutimg.jpeg" alt="" height="300px" width="330px"></div>
+          <div class="about-content">
+              <div class="text-3">  At <span>SmartSnip</span>, we specialize in document summarization. Our platform<br>takes various types of documents as input and provides concise<br> summaries in return.With our <span>user-friendly interface</span> you can easily<br> summarize important information from lengthy documents in<br> just a few clicks. Our mission is to make <span>document summarization</span><br> simple and accessible to everyone.</div>
+              <div class="text-5">With our effort, we hope everyone save their time with instant, concise<br> summaries & quickly grasping key insights with the help of <span>S</span></div>
+          </div>
+      </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services">
+  <h1>Our Services</h1>
+  <div class="container">
+    <form action="/" method="POST" style="display: flex; flex-wrap: wrap;">
+      <div class="responsive dialogue"  style="margin-right: 45px;">
+        <div class="round-image">
+          <img src="static\images/samsum.jpg" alt="read" loading="lazy" />
+        </div>
+        <h2>Drama/Dialogues</h2>
+        <p>Summarize drama/dialogues using SMARTSNIP (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="dialogue" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit">Let's Explore</button>
+      </div>
+      <div class="responsive medical" style="margin-right: 45px;">
+          <div class="round-image">
+            <img src="static\images/medical.jpg" alt="read" loading="lazy" />
+          </div>
+        <h2>Medical Document</h2>
+        <p>Get the gist of medical report using SMARTSNIP (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="medical" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit">Let's Explore</button>
+      </div>
+      <div class="responsive scientific" style="margin-right: 45px;">
+        <div class="round-image">
+          <img src="static\images/scientific.jpg" alt="read" loading="lazy" />
+        </div>
+        <h2>Scientific Document</h2>
+        <p>Summarize scientific paper of your choice with SMARTSNIP (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="scientific" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit">Let's Explore</button>
+      </div>
+      <div class="responsive news" style="margin-right: 45px;">
+        <div class="round-image">
+          <img src="static\images/cnn-dm.jpg" alt="read" loading="lazy" />
+        </div>
+        <h2>CNN/Mails</h2>
+        <p>Save your time by summarizing news and makil using SMARTSNIP (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="news" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit">Let's Explore</button>
+      </div>
+      <div class="responsive legal" style="margin-right: 45px;">
+        <div class="round-image">
+          <img src="static\images/legal.jpg" alt="read" loading="lazy" />
+        </div>
+        <h2>Legal</h2>
+        <p>Get the summary of the legal docs with SMARTSNIP (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="legal" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit">Let's Explore</button>
+      </div>
+      <div class="responsive general" style="margin-right: 45px;">
+        <div class="round-image">
+          <img src="static\images/general.jpg" alt="read" loading="lazy" />
+        </div>
+        <h2>General</h2>
+        <p>Not sure of your text's type? use me (:</p>
+        <button class="m-1 bg-blue-700 hover:bg-blue-500 text-white font-semi-bold py-2 px-4 rounded-lg" name="document_type" value="general" style="height:40px;width:140px; font-size: large; background-color: rgb(230, 17, 110); margin: 0 auto;" type="submit" onclick="submitService('general')">Let's Explore</button>
+      </div>
+    </form>
+  </div>
+</section>
+    <!-- Testimonials Section -->
+    <section class=" testimonials">
+      <div class="testimonials_heading">
+        <h1>Testimonials</h1>
+      </div>
+      <figure class="testimonal-Card">
+     <blockquote>I've been using the multi-document summarizer on this site for a while now, and it's been incredibly helpful. It saves me so much time by condensing complex documents into concise summaries. Highly recommended!
+        
+          <div class="arrow"></div>
+        </blockquote>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+        <div class="author">
+          <h5>Merry</h5>
+        </div>
+      </figure>
+      <figure class="testimonal-Card hover">
+        <blockquote>This website's multi-document summarizer is a game-changer! As a student, I often have to sift through lengthy research papers, but with this tool, I can quickly grasp the main points without reading every word. It's a real time-saver!
+          <div class="arrow"></div>
+        </blockquote>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+        <div class="author">
+          <h5>Rohan</h5>
+        </div>
+      </figure>
+      <figure class="testimonal-Card">
+        <blockquote>As a researcher, I rely on accurate and concise summaries of various documents. This website's multi-document summarizer has exceeded my expectations. It's intuitive to use and delivers precise summaries consistently.Highly recommended.SmartSnip
+        </blockquote>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+        <div class="author">
+          <h5>Emily</h5>
+        </div>
+      </figure>
+    </section>
+
+   <!-- Faq section -->
+   <section class="faq">
+    <div class="faq_heading">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="wrap">
+      <ul class="accordion">
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)"> Who are we and what do we do?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We are a team of open source contributors who have created this website "SmartSnip"
+            with the aim
+            to provide a one step solution to lengthy readings and manually writing summaries of long text/documents We hope that everyone can quickly grasp the main points without reading every word with our SmartSnip.
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">How do I use SmartSnip?
+              <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">To use SmartSnip, follow these steps:
+        <br>
+          1. Enter your text by typing or pasting it into the provided area.
+          <br>
+          2. Adjust the size of your summary as needed.
+          <br>
+          3. Click on the "Summarize" button.
+          <br>
+          4. Once the summary is generated, you can copy it to the clipboard and use it anywhere.
+        </p>
+      </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What are the services we offer?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We offer multiple services like:
+            <br>
+            1. Dialogues and Drama Summarization
+            <br>
+            2. Scientific Documnet Summarization
+            <br>
+            3. Medical Document Summarization
+            <br>
+            4. News and dailyMail summarization
+            <br>
+            5. Legal Document Summarization
+            <br>
+            6. General Document Summarization
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">How can you Contact Us?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">You can contact us via email</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- footer start -->
+<footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="static\logo.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <h2 class="footerheading">SmartSnip</h2>
+          <p class="footerpara">Snip snap summarize</p>
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Banasthali University, India</p>
+          <p class="email-id"><a href="mailto:shrimalrishika@gmail.com">shrimalrishika@gmail.com</a></p>
+          <p class="email-id"><a href="mailto:rishita.u1234@gmail.com">rishita.u1234@gmail.com</a></p>
+        </div>
+       
+        <div class="col">
+          <h3>HOME
+            <div class="underline"><span></span></div> 
+          </h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li>
+              <a href="https://github.com/rishitaaaaa">Contributer 1</a>
+            </li>
+            <li>
+              <a href="https://github.com/rishika-shrimal2107">Contributer 2</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="#services">Dialogues and Drama Summarization</a>
+            </li>
+            <li>
+              <a href="#services">Medical Document Summarization</a>
+            </li>
+            <li>
+              <a href="#services">Scientific Document Summarization</a>
+            </li>
+            <li>
+              <a href="#services">News and Mails Document Summarization</a>
+            </li>
+            <li>
+              <a href="#services">Legal Document Summarization</a>
+            </li>
+            <li>
+              <a href="#services">General Document Summarization</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+             <ul>
+              <a href="https://x.com/RishitaU1234?t=LzpyCKuMptR2QlvR9PNrVQ&s=09">
+                <li><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://github.com/rishika-shrimal2107">
+                <li><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="https://www.linkedin.com/in/rishika-shrimal-7577a7221/">
+                <li><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+  let preloader = document.querySelector(".loading-wrapper");
+  function myFunction() {
+    preloader.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+  let navbar = document.querySelector("#nav");
+  let navmenu = document.querySelector("#navmenu");
+
+  window.onscroll = function () {
+    if (window.pageYOffset >= navmenu.offsetTop) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  };
+  
+  window.onscroll = () => {
+      if (window.scrollY > 100) {
+          navbar.classList.add('nav-active');
+      } else {
+          navbar.classList.remove('nav-active');
+      }
+  };
+  </script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+// Get all accordion titles
+var accordionTitles = document.querySelectorAll('.accordion__title');
+
+// Add click event listener to each accordion title
+accordionTitles.forEach(function(title) {
+  title.addEventListener('click', function() {
+    // Toggle active class to the clicked title
+    this.classList.toggle('active');
+
+    // Toggle the visibility of the content associated with the clicked title
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
+});
+
+  </script>
+<script>
+  function submitService(serviceType) {
+  // Get the form element
+  const form = document.querySelector("form");
+
+  // Create a hidden form field to store the service type
+  const hiddenInput = document.createElement("input");
+  hiddenInput.type = "hidden";
+  hiddenInput.name = "document_type";
+  hiddenInput.value = serviceType;
+
+  // Add the hidden field to the form
+  form.appendChild(hiddenInput);
+
+  // Submit the form
+  form.submit();
+}
+</script>
+  </body>
+</html>
